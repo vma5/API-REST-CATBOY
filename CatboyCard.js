@@ -4,6 +4,7 @@ import api from "../services/api";
 const CatboyCard = () => {
   const [catboy, setCatboy] = useState(null);
 
+  // Função para buscar uma nova imagem
   const fetchCatboy = async () => {
     try {
       const response = await api.get("/img");
@@ -22,7 +23,7 @@ const CatboyCard = () => {
       {catboy ? (
         <div>
           <img src={catboy.url} alt="Catboy" width="300px" />
-          <p>{catboy.artist}</p>
+          <p>Artista: {catboy.artist}</p>
           <button onClick={fetchCatboy}>Nova Imagem</button>
         </div>
       ) : (
