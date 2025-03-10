@@ -1,0 +1,10 @@
+src/
+│── components/
+│   ├── CatboyCard.js
+│   ├── CatboyForm.js
+│── pages/
+│   ├── Home.js
+│── services/
+│   ├── api.js
+│── App.js
+│── index.js
